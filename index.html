@@ -15,129 +15,159 @@
 <p class="p1">&lt;!DOCTYPE html&gt;</p>
 <p class="p1">&lt;html lang="en"&gt;</p>
 <p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Official Horse Draw&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: #f4f4f9;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #333;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 0;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>header {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: #4B79A1;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 20px 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.8rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-weight: bold;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.container {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>max-width: 900px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 20px auto;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 0 15px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.race {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: white;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 8px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 2px 5px rgba(0,0,0,0.1);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 15px 20px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 15px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.race h2 {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 0 0 10px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #2C3E50;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>ul {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>list-style-type: none;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 0;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>li {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 8px 10px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-bottom: 1px solid #eee;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>li:last-child {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-bottom: none;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.house {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-weight: bold;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #4B79A1;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-right: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>@media (max-width: 600px) {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>.race h2 {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>font-size: 1.2rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1">&lt;title&gt;Horse Draw Manager&lt;/title&gt;</p>
+<p class="p1">&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</p>
+<p class="p1">&lt;style&gt;</p>
+<p class="p1">body {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-family: Arial, sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: #f4f6f8;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding: 20px;</p>
+<p class="p1">}</p>
+<p class="p1">h1 {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>text-align: center;</p>
+<p class="p1">}</p>
+<p class="p1">.section {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: white;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-bottom: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-radius: 8px;</p>
+<p class="p1">}</p>
+<p class="p1">input, select, button {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin: 5px 0;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>width: 100%;</p>
+<p class="p1">}</p>
+<p class="p1">button {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: #2c3e50;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border: none;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>cursor: pointer;</p>
+<p class="p1">}</p>
+<p class="p1">button:hover {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: #1a252f;</p>
+<p class="p1">}</p>
+<p class="p1">.race {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border: 1px solid #ddd;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-top: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-radius: 5px;</p>
+<p class="p1">}</p>
+<p class="p1">.horse {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding: 5px;</p>
+<p class="p1">}</p>
+<p class="p1">&lt;/style&gt;</p>
 <p class="p1">&lt;/head&gt;</p>
+<p class="p2"><br></p>
 <p class="p1">&lt;body&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;header&gt;Official Horse Draw&lt;/header&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="race"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2&gt;Race 1 (3 horses)&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;span class="house"&gt;House 1:&lt;/span&gt; Sabe na Mundo&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;span class="house"&gt;House 2:&lt;/span&gt; Bless&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;span class="house"&gt;House 3:&lt;/span&gt; Miss Fogo&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
 <p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="race"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2&gt;Race 2 (3 horses)&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;span class="house"&gt;House 1:&lt;/span&gt; Pisadelo&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;span class="house"&gt;House 4:&lt;/span&gt; Rainha&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;span class="house"&gt;House 5:&lt;/span&gt; Moita&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1">&lt;h1&gt;🐎 Horse Draw Manager&lt;/h1&gt;</p>
 <p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="race"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2&gt;Race 3 (3 horses)&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;span class="house"&gt;House 1:&lt;/span&gt; Arbisa&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;span class="house"&gt;House 2:&lt;/span&gt; America&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;span class="house"&gt;House 6:&lt;/span&gt; Santiago&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1">&lt;div class="section"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;h2&gt;Add Horse&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;input id="horseName" placeholder="Horse name"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;input id="horseHouse" placeholder="House number"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;button onclick="addHorse()"&gt;Add Horse&lt;/button&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
 <p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="race"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2&gt;Race 4 (3 horses)&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;span class="house"&gt;House 1:&lt;/span&gt; Fradu Fra&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;span class="house"&gt;House 5:&lt;/span&gt; Showtime&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;span class="house"&gt;House 6:&lt;/span&gt; Comandate&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1">&lt;div class="section"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;h2&gt;Create Race&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;input id="raceName" placeholder="Race name (e.g. Race 1)"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;button onclick="addRace()"&gt;Add Race&lt;/button&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
 <p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="race"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2&gt;Race 5 (2 horses)&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;span class="house"&gt;House 2:&lt;/span&gt; Forca&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;span class="house"&gt;House 6:&lt;/span&gt; Cidadela&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1">&lt;div class="section"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;h2&gt;Races&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div id="races"&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
 <p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="race"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2&gt;Race 6 (2 horses)&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;span class="house"&gt;House 6:&lt;/span&gt; Stylish&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;span class="house"&gt;House 6:&lt;/span&gt; Djabrava &lt;small&gt;(same house)&lt;/small&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/ul&gt;</p>
+<p class="p1">&lt;script&gt;</p>
+<p class="p1">let horses = JSON.parse(localStorage.getItem("horses")) || [];</p>
+<p class="p1">let races = JSON.parse(localStorage.getItem("races")) || [];</p>
+<p class="p2"><br></p>
+<p class="p1">function save() {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>localStorage.setItem("horses", JSON.stringify(horses));</p>
+<p class="p1"><span class="Apple-converted-space">  </span>localStorage.setItem("races", JSON.stringify(races));</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">function addHorse() {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const name = horseName.value.trim();</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const house = horseHouse.value.trim();</p>
+<p class="p1"><span class="Apple-converted-space">  </span>if (!name || !house) return alert("Fill all fields");</p>
+<p class="p1"><span class="Apple-converted-space">  </span>horses.push({ name, house });</p>
+<p class="p1"><span class="Apple-converted-space">  </span>horseName.value = "";</p>
+<p class="p1"><span class="Apple-converted-space">  </span>horseHouse.value = "";</p>
+<p class="p1"><span class="Apple-converted-space">  </span>save();</p>
+<p class="p1"><span class="Apple-converted-space">  </span>render();</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">function addRace() {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const name = raceName.value.trim();</p>
+<p class="p1"><span class="Apple-converted-space">  </span>if (!name) return;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>races.push({ name, horses: [] });</p>
+<p class="p1"><span class="Apple-converted-space">  </span>raceName.value = "";</p>
+<p class="p1"><span class="Apple-converted-space">  </span>save();</p>
+<p class="p1"><span class="Apple-converted-space">  </span>render();</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">function addHorseToRace(raceIndex, horseIndex) {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const race = races[raceIndex];</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const horse = horses[horseIndex];</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>if (race.horses.some(h =&gt; h.name === horse.name)) return;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>race.horses.push(horse);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>save();</p>
+<p class="p1"><span class="Apple-converted-space">  </span>render();</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">function removeHorseFromRace(raceIndex, horseIndex) {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>races[raceIndex].horses.splice(horseIndex, 1);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>save();</p>
+<p class="p1"><span class="Apple-converted-space">  </span>render();</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">function render() {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const container = document.getElementById("races");</p>
+<p class="p1"><span class="Apple-converted-space">  </span>container.innerHTML = "";</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>races.forEach((race, rIndex) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const div = document.createElement("div");</p>
+<p class="p1"><span class="Apple-converted-space">    </span>div.className = "race";</p>
+<p class="p1"><span class="Apple-converted-space">    </span>div.innerHTML = `&lt;strong&gt;${race.name}&lt;/strong&gt;`;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>race.horses.forEach((h, hIndex) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>div.innerHTML += `</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="horse"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>${h.name} (House ${h.house})</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;button onclick="removeHorseFromRace(${rIndex}, ${hIndex})"&gt;Remove&lt;/button&gt;</p>
 <p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>`;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>const select = document.createElement("select");</p>
+<p class="p1"><span class="Apple-converted-space">    </span>horses.forEach((h, i) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const opt = document.createElement("option");</p>
+<p class="p1"><span class="Apple-converted-space">      </span>opt.value = i;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>opt.textContent = `${h.name} (House ${h.house})`;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>select.appendChild(opt);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>const btn = document.createElement("button");</p>
+<p class="p1"><span class="Apple-converted-space">    </span>btn.textContent = "Add Horse to Race";</p>
+<p class="p1"><span class="Apple-converted-space">    </span>btn.onclick = () =&gt; addHorseToRace(rIndex, select.value);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>div.appendChild(select);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>div.appendChild(btn);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>container.appendChild(div);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>});</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">render();</p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p2"><br></p>
 <p class="p1">&lt;/body&gt;</p>
 <p class="p1">&lt;/html&gt;</p>
 </body>
